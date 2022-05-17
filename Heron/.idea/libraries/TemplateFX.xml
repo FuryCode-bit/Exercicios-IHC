@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TemplateFX">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/TemplateFX.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

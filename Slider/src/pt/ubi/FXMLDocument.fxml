@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ubi.FXMLDocumentController">
+   <children>
+      <BorderPane fx:id="pane" layoutX="14.0" layoutY="14.0" prefHeight="375.0" prefWidth="570.0" />
+      <GridPane layoutX="26.0" layoutY="406.0" prefHeight="91.0" prefWidth="508.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="548.0" minWidth="10.0" prefWidth="496.79998779296875" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.20001220703125" minWidth="0.0" prefWidth="11.20001220703125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="36.80001220703125" minHeight="10.0" prefHeight="36.0000244140625" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="36.80001220703125" minHeight="10.0" prefHeight="36.0000244140625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="39.99997558593749" minHeight="10.0" prefHeight="25.5999755859375" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Slider fx:id="sliderRed" onMouseDragged="#ChangeBackgroudColor" prefHeight="14.0" prefWidth="526.0" />
+            <Slider fx:id="sliderBlue" onMouseDragged="#ChangeBackgroudColor" prefHeight="14.0" prefWidth="480.0" GridPane.rowIndex="2" />
+            <Slider fx:id="sliderGreen" onMouseDragged="#ChangeBackgroudColor" prefHeight="14.0" prefWidth="480.0" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label fx:id="labelRed" layoutX="534.0" layoutY="411.0" prefHeight="26.0" prefWidth="51.0" style="-fx-background-color: red;" text="Red" textFill="WHITE" />
+      <Label fx:id="labelGreen" layoutX="534.0" layoutY="438.0" prefHeight="26.0" prefWidth="51.0" style="-fx-background-color: green;" text="Green" textFill="WHITE" />
+      <Label fx:id="labelBlue" layoutX="534.0" layoutY="464.0" prefHeight="26.0" prefWidth="51.0" style="-fx-background-color: blue;" text="Blue" textFill="WHITE" />
+   </children>
+</AnchorPane>

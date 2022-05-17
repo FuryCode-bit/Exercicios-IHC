@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ubi.FXMLDocumentController">
+   <children>
+      <TextField fx:id="wordLbl" layoutX="105.0" layoutY="430.0" />
+      <Label layoutX="41.0" layoutY="429.0" prefHeight="26.0" prefWidth="50.0" text="Word:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="noTimes" alignment="CENTER" contentDisplay="CENTER" layoutX="275.0" layoutY="429.0" prefHeight="26.0" prefWidth="50.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="countBtn" layoutX="358.0" layoutY="430.0" mnemonicParsing="false" onAction="#count" prefHeight="26.0" prefWidth="98.0" text="Count" />
+      <CheckBox fx:id="bigLetters" layoutX="490.0" layoutY="434.0" mnemonicParsing="false" text="Big Letters" />
+      <TextArea fx:id="fullTxt" layoutX="35.0" layoutY="26.0" prefHeight="376.0" prefWidth="529.0" style="-fx-background-color: #FFF28E;" />
+   </children>
+</AnchorPane>

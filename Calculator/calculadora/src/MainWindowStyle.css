@@ -1,0 +1,20 @@
+.root {
+    -fx-background-color: #222;
+    -fx-background-radius: 28;
+}
+
+.mainPane {
+    -fx-background-color: linear-gradient(to left, #00DBDE, #FC00FF);
+    -fx-background-radius: 0 0 28 28;
+}
+
+.resultPane, .btn {
+    -fx-background-color: #00000025;
+    -fx-background-radius: 15;
+ }
+
+ .btnClose {
+    -fx-background-color: #00150000;
+    -fx-background-radius: 15;
+ }
+
